@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site ](https://rychmond1.github.io/Four-Grid-Section)
+- Live Site URL: [ Github Live Site ](https://rychmond1.github.io/Four-Grid-Section)
 
 ### Built with
 
