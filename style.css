@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* HTML tags */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  min-height: calc(100vh - 0.1px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  color: hsl(229, 6%, 66%);
+}
+h1 {
+  /* color: hsl(234, 12%, 34%); */
+  background: linear-gradient(500deg, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  padding-bottom: 0.7rem;
+}
+h2 {
+  font-weight: 200;
+  font-size: 2rem;
+  padding-top: 2.5rem;
+  color: hsl(234, 12%, 34%);
+}
+header {
+  text-align: center;
+}
+
+header p {
+  width: 40%;
+  margin: 0 auto;
+}
+img {
+  transition: all 0.5s;
+}
+
+/* main grid  */
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin: 0 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.box {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: right;
+  padding: 1.5rem 2rem;
+  transition: all 0.5s;
+  box-shadow: 0 0.9375rem 1.875rem -0.6875rem rgba(131, 166, 210, 0.5);
+}
+.box-text {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.box1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.box2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.box3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.box4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  margin-bottom: 1rem;
+}
+.box-text h4 {
+  font-size: 18px;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.7rem;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.box1,
+.box4 {
+  align-self: center;
+}
+.box:hover {
+  transform: translateY(-1rem);
+}
+.box:hover img {
+  scale: 1.2;
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    margin-bottom: 12rem;
+  }
+  .box:hover img {
+    scale: 1.1;
+  }
+  header p {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
