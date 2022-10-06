@@ -34,7 +34,7 @@ Users should be able to:
 ### Useful resources
 
 - [devdocs.io](https://www.devdocs.io) -
-  I really liked the way conceopts where explained on this website.
+  I really liked the way concepts were explained on this website.
 
 ## Author
 
